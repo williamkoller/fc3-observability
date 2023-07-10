@@ -6,7 +6,6 @@ Na teoria de controle, a observabilidade eh definida como u ma medida de quao be
 internos de um sistema podem ser definidos a partir do conhecimento das saidas externas desse sistema. Simplificando,
 obsevabilidade e quao bem voce entender do seu sistema complexo.
 
-
 ## Observabilidade x Monitoriamento
 
 - Monitoriamento nos mostra que ha algo de errado
@@ -15,27 +14,25 @@ obsevabilidade e quao bem voce entender do seu sistema complexo.
 
 - Observabilidade nos permite perguntar o porque (porque a memoria esta tao alta)
 
-
 ## Os 3 pilares da observabilidade
 
 - Metricas (CPU esta em 90%)
 
-- Logs 
+- Logs
 
 - Tracing (ordem de como o evento foi gerado)
 
 ## Elastic Stack
 
 ### Visao geral
+
 - Elasticsearch
   - Search engine e analytics
-  
 - Logstash
   - Processador de dados atraves de pipelines que consegue receber, transformar e enviar simultaneamente
-  
 - Kibana
   - Permite usuarios a visualizarem os dados do elasticsearch em diversas perspectivas
-  
+
 ### Elastic
 
 - Search engine e analytics
@@ -69,3 +66,27 @@ obsevabilidade e quao bem voce entender do seu sistema complexo.
 - Dashboards
 - Graficos interativos
 - Mapas
+
+## Qual a diferenca entre ELK Stack e Elastic Stack?
+
+### Beats
+
+- Beats foi anunciado em 2015
+- "Lightweight data shipper"
+- Agente coletor de dados
+- Logs, metricas, network data, audit data, uptime monitoring
+- Voce pode construir seu proprio Beat
+- Quando falamos de Elastic Stack, falamos de: Kibana, Elasticsearch, Beats e Logstash
+
+### Elastic
+
+- Empresa por tras das solucoes
+- Cloud Solution
+- Oferece plugins e recursos licenciados
+- Produtos
+  - APM
+  - Maps
+  - Site search
+  - Enterprise search
+  - App search
+  - Infrastructure

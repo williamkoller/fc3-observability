@@ -90,3 +90,19 @@ obsevabilidade e quao bem voce entender do seu sistema complexo.
   - Enterprise search
   - App search
   - Infrastructure
+
+### Iniciando com Elasticsearch e Kibana
+
+- usuarios linux comandos:
+  ```
+  docker network create observability
+  ```
+  ```
+  mkdir elasticsearch_data
+  ```
+  ```
+  sudo sysctl -w vm.max_map_count=262144
+  ```
+  ```
+  docker-compose up -d
+  ```
